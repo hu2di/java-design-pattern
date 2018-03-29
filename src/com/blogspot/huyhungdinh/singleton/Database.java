@@ -1,19 +1,18 @@
 package com.blogspot.huyhungdinh.singleton;
 
-public class Database {
-	private String name;
-	private static Database instance;
-	//private static Database instance = new Database("x");
+import java.util.Random;
 
-	private Database(String name) {
-		this.name = name;
+public class Database {
+
+	private static Database instance = new Database();
+	private int name;
+
+	private Database() {
+		this.name = new Random().nextInt(100);
 		System.out.println("Create " + this.name);
 	}
 
-	public static synchronized Database getInstance(String name) {
-		if (instance == null) {
-			instance = new Database(name);
-		}
+	public static Database getInstance() {
 		return instance;
 	}
 
