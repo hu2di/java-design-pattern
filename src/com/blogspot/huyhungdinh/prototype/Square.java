@@ -4,7 +4,7 @@
 package com.blogspot.huyhungdinh.prototype;
 
 /**
- * @author hudi
+ * @author hu2di
  *
  */
 public class Square extends Shape {

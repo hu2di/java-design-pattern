@@ -1,5 +1,9 @@
 package com.blogspot.huyhungdinh.prototype;
 
+/**
+ * @author hu2di
+ *
+ */
 public class Circle extends Shape {
 
 	public Circle() {

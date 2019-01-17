@@ -1,5 +1,9 @@
 package com.blogspot.huyhungdinh.prototype;
 
+/**
+ * @author hu2di
+ *
+ */
 public abstract class Shape implements Cloneable {
 
 	private String id;

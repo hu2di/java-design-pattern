@@ -6,7 +6,7 @@ package com.blogspot.huyhungdinh.prototype;
 import java.util.Hashtable;
 
 /**
- * @author hudi
+ * @author hu2di
  *
  */
 public class ShapeCache {
