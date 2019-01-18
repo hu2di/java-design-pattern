@@ -1,6 +1,6 @@
 ### java-design-pattern
 I'm learning design pattern by myself :)))
-\nFrom: https://www.tutorialspoint.com/design_pattern
+<br/>From: https://www.tutorialspoint.com/design_pattern
 
 ### 23 Patterns
 1. Creational
