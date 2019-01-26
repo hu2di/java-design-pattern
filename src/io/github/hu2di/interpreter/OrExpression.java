@@ -9,8 +9,8 @@ package io.github.hu2di.interpreter;
  */
 public class OrExpression implements Expression {
 
-	private Expression expr1;
-	private Expression expr2;
+	private Expression expr1 = null;
+	private Expression expr2 = null;
 
 	public OrExpression(Expression expr1, Expression expr2) {
 		this.expr1 = expr1;
