@@ -34,7 +34,7 @@ public class StudentDaoImpl implements StudentDao {
 	@Override
 	public List<Student> getAllStudents() {
 		// TODO Auto-generated method stub
-		return null;
+		return students;
 	}
 
 	/*
@@ -45,7 +45,7 @@ public class StudentDaoImpl implements StudentDao {
 	@Override
 	public Student getStudent(int rollNo) {
 		// TODO Auto-generated method stub
-		return null;
+		return students.get(rollNo);
 	}
 
 	/*
@@ -58,7 +58,8 @@ public class StudentDaoImpl implements StudentDao {
 	@Override
 	public void updateStudent(Student student) {
 		// TODO Auto-generated method stub
-
+		students.get(student.getRollNo()).setName(student.getName());
+		System.out.println("Student rollNo: " + student.getRollNo() + " updated in the database.");
 	}
 
 	/*
@@ -71,7 +72,8 @@ public class StudentDaoImpl implements StudentDao {
 	@Override
 	public void deleteStudent(Student student) {
 		// TODO Auto-generated method stub
-
+		students.remove(student.getRollNo());
+		System.out.println("Student rollNo: " + student.getRollNo() + " deleted from database.");
 	}
 
 }
